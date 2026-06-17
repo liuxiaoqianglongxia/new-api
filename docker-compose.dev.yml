@@ -23,7 +23,7 @@ services:
     container_name: new-api-dev
     restart: unless-stopped
     ports:
-      - "3000:3000"
+      - "13001:3000"  # 宿主 13001 → 容器 3000（避免与 Appsmith 3000 冲突）
     volumes:
       - dev_data:/data
     environment:

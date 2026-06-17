@@ -1,0 +1,5 @@
+# Override: use port 13002 (13001 is occupied by WSL system socket)
+services:
+  new-api:
+    ports: !override
+      - "13002:3000"
